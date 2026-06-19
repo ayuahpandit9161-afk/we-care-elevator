@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>We Care Elevator Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#5c5f61",
+                    "on-secondary-fixed-variant": "#444749",
+                    "inverse-primary": "#b0c8eb",
+                    "surface-tint": "#49607e",
+                    "primary-fixed": "#d2e4ff",
+                    "background": "#faf9fb",
+                    "tertiary-fixed": "#d5e3fc",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-container": "#768dad",
+                    "on-error": "#ffffff",
+                    "surface-container": "#efedf0",
+                    "on-primary-fixed": "#001c37",
+                    "outline": "#74777e",
+                    "primary-container": "#0a2540",
+                    "tertiary-fixed-dim": "#b9c7df",
+                    "secondary-fixed-dim": "#c4c7c9",
+                    "surface-variant": "#e3e2e5",
+                    "inverse-surface": "#2f3033",
+                    "surface-container-low": "#f5f3f6",
+                    "tertiary": "#020f20",
+                    "primary-fixed-dim": "#b0c8eb",
+                    "secondary-container": "#e0e3e5",
+                    "surface-container-highest": "#e3e2e5",
+                    "outline-variant": "#c4c6ce",
+                    "on-surface": "#1b1c1e",
+                    "primary": "#000f22",
+                    "on-primary-fixed-variant": "#314865",
+                    "on-tertiary-fixed": "#0d1c2e",
+                    "surface-bright": "#faf9fb",
+                    "error-container": "#ffdad6",
+                    "surface-dim": "#dbd9dc",
+                    "inverse-on-surface": "#f2f0f3",
+                    "on-secondary-container": "#626567",
+                    "on-tertiary-fixed-variant": "#3a485b",
+                    "on-background": "#1b1c1e",
+                    "surface": "#faf9fb",
+                    "on-tertiary-container": "#7e8ca2",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#e0e3e5",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e9e8ea",
+                    "on-surface-variant": "#43474d",
+                    "tertiary-container": "#172537",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed": "#191c1e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "20px",
+                    "xs": "8px",
+                    "xl": "48px",
+                    "md": "24px",
+                    "gutter": "16px",
+                    "sm": "16px",
+                    "lg": "32px",
+                    "base": "4px"
+            },
+            "fontFamily": {
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "label-md": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "display-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #faf9fb;
+            color: #1b1c1e;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 flex items-center justify-between px-margin-mobile h-16 shadow-sm bg-surface dark:bg-surface-dim">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h1 class="font-headline-md text-headline-md-mobile text-primary dark:text-primary-fixed-dim tracking-tight">We Care</h1>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center overflow-hidden active:scale-95 transition-transform border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a technical manager in a clean corporate uniform, set against a blurred office background. The lighting is soft and professional, emphasizing a modern corporate minimalist aesthetic with clean whites and subtle blue tones. High resolution and professional demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt7C1oLkX6QqfA-N-3365oCzXUrLTBQs3Gmpb34r2fOJdz5kPx9z_KBTt6FjGBQH_nOSYQTtNdOh5WG3EjYYQQhPDQd5FW7WRn8nhTOMshyNtoXh-MQxfEJ_I2fx-DQ6C-9nG6qm0322YCG5cJ9bfAtt9ALYlGdl9YmRvG7X1pOPV22o_dmVHU72QNjjwJv_lRXqjNHtcyNL1bOHn7CwzI3LogN9el8cM1pl3DxubEbeXLdipv_8r0vH0ZTi4n4PtHoDTr4yMGOP8"/>
+</div>
+</header>
+<main class="flex-grow pt-16 pb-24">
+<!-- Hero Section: Bento Style -->
+<section class="px-margin-mobile pt-lg flex flex-col gap-sm">
+<div class="relative w-full h-[240px] rounded-xl overflow-hidden shadow-lg group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Interior of a luxury modern elevator with brushed steel walls, minimalist LED recessed lighting, and a digital touch panel display. The style is sleek and professional, using a cool blue and silver color palette to evoke a sense of safety, precision, and high-end engineering. Soft atmospheric lighting highlights the clean surfaces." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9CAoB9A_sZ9IJP1yXnnp3ravxgRWOI1jJwOGJFCpLfy394z1pyCJnmvg_KYk5y-fixWvz9EhbFulMCe3MF6FllX_RoHr-3HoYvPUEOO91DSe1eqfOkhl0HAHBqR0AUajbhbiItpIkiAGFpgb4nta9TCpMUAhZc00XY4iwregAOwxGD2jFtdfoy1mEzIbcrPGVm7CrzDauv_X8hNZBCvLs5__4XKhzJE0TJ2H8JOYbdr21fmiGww2OJ4phODQ4B8zt9y6hBy5cudM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-md">
+<h2 class="font-display-lg-mobile text-display-lg-mobile text-white mb-base">Reliable Elevator Solutions</h2>
+<p class="font-body-md text-body-md text-white/80 max-w-[280px]">Precision engineering for vertical transportation excellence.</p>
+</div>
+</div>
+<!-- Quick Actions -->
+<div class="grid grid-cols-2 gap-sm">
+<button class="bg-primary text-white py-sm rounded-xl font-label-md text-label-md flex flex-col items-center justify-center gap-xs shadow-md active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="event_available">event_available</span>
+                    Book Service
+                </button>
+<button class="bg-error text-white py-sm rounded-xl font-label-md text-label-md flex flex-col items-center justify-center gap-xs shadow-md active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="emergency">emergency</span>
+                    Emergency Call
+                </button>
+</div>
+</section>
+<!-- Company Introduction Chips -->
+<section class="px-margin-mobile pt-lg">
+<div class="flex gap-xs overflow-x-auto pb-base no-scrollbar">
+<div class="bg-surface-container flex items-center gap-xs px-sm py-xs rounded-full whitespace-nowrap">
+<span class="material-symbols-outlined text-primary scale-75" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md text-on-surface">ISO Certified</span>
+</div>
+<div class="bg-surface-container flex items-center gap-xs px-sm py-xs rounded-full whitespace-nowrap">
+<span class="material-symbols-outlined text-primary scale-75" data-icon="timer">timer</span>
+<span class="font-label-md text-label-md text-on-surface">24/7 Support</span>
+</div>
+<div class="bg-surface-container flex items-center gap-xs px-sm py-xs rounded-full whitespace-nowrap">
+<span class="material-symbols-outlined text-primary scale-75" data-icon="groups">groups</span>
+<span class="font-label-md text-label-md text-on-surface">Expert Team</span>
+</div>
+</div>
+</section>
+<!-- Services Section: Asymmetric Grid -->
+<section class="px-margin-mobile pt-lg">
+<div class="flex justify-between items-end mb-sm">
+<h3 class="font-headline-sm text-headline-sm text-primary">Core Services</h3>
+<span class="font-label-md text-label-md text-on-primary-fixed-variant">See All</span>
+</div>
+<div class="grid grid-cols-6 grid-rows-2 gap-sm h-[320px]">
+<!-- Repair - Large Card -->
+<div class="col-span-4 row-span-1 bg-surface-container-lowest rounded-xl p-md shadow-sm border border-outline-variant/10 flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex justify-between items-start">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="home_repair_service">home_repair_service</span>
+</div>
+<span class="bg-success-container/10 text-emerald-700 px-xs py-0.5 rounded text-[10px] font-bold uppercase tracking-wider">Fast Track</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Repair</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Rapid fault resolution</p>
+</div>
+</div>
+<!-- AMC - Small Card -->
+<div class="col-span-2 row-span-1 bg-surface-container-lowest rounded-xl p-md shadow-sm border border-outline-variant/10 flex flex-col items-center justify-center gap-xs text-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-md text-label-md text-on-surface">AMC</span>
+</div>
+<!-- Modernization - Wide Card -->
+<div class="col-span-3 row-span-1 bg-surface-container-lowest rounded-xl p-md shadow-sm border border-outline-variant/10 flex flex-col justify-end hover:bg-surface-container-high transition-colors relative overflow-hidden">
+<span class="material-symbols-outlined absolute top-2 right-2 text-primary/10 text-5xl" data-icon="auto_awesome">auto_awesome</span>
+<h4 class="font-body-lg text-body-lg font-bold text-on-surface">Modernization</h4>
+</div>
+<!-- Installation - Small Card -->
+<div class="col-span-3 row-span-1 bg-surface-container-lowest rounded-xl p-md shadow-sm border border-outline-variant/10 flex items-center gap-sm hover:bg-surface-container-high transition-colors">
+<div class="w-8 h-8 rounded bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="add_business">add_business</span>
+</div>
+<span class="font-body-md text-body-md font-bold text-on-surface">Installation</span>
+</div>
+</div>
+</section>
+<!-- Spare Parts Spotlight -->
+<section class="px-margin-mobile pt-lg pb-xl">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-sm">Certified Spare Parts</h3>
+<div class="grid grid-cols-2 gap-sm">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/10 group">
+<div class="h-28 bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="A macro photograph of high-precision elevator pulley wheels and steel cables. The lighting is dramatic and focused, emphasizing the metallic textures and industrial design. The color palette consists of cool grays, deep blacks, and a hint of primary blue reflection, fitting a premium corporate technical theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQaZSOEDtGt4Lq03g8V3uaOcTa5PHU9yjDKzpSbaWAePecFIm7cSDtOQxr_oBwxImN-z9iq-IeXUhH_2adA-EPbqkFr_F3gHg0U_LhCc8q_R7Fcg7juNphqtjgwUcCVp_i8_ucYc0PpXISMSV-ufE4IXGtQwACZrgJTyHkGzkh9QuoGqaBnX1AQY-yyVUK4KHijMrYdE1JmuRZ8rqahldHcyLCJ8GZzGi78VLahdOP3YTQDbozyjJlS1A6E1xasrkQGLy27_wesbM"/>
+</div>
+<div class="p-xs">
+<p class="font-label-md text-label-md text-primary">Traction System</p>
+<p class="font-body-md text-body-md text-on-surface-variant">In Stock</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm border border-outline-variant/10 group">
+<div class="h-28 bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform" data-alt="A clean, studio shot of a modern elevator control board with glowing green and blue LED components. The background is a crisp, sterile white, highlighting the technological sophistication of the part. The visual style is minimalist and corporate, communicating reliability and high-tech engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeAwaps4JQsGQ3MYpW43KKJwIX0pWmWKhijXQNqnXtowOFIj44-cRXYvgFXOihAPOBwN9-SuGdqIwQdyuuRFaX25XsZ4ALnJbozHCbx9oVtqBOnUHRIFygtm_022QSx4aqt-RrVmNNXJSv4qdJGk1DN3Hj4pzM9zLZ6nPSYQtYYkEayzUwIJWT1SKDSqyhf27hNqeZ8ExdYDvR-bb47Om5uwo8QVPdFn9lnb7NXAbrnvyBhGIcZdPRDwrpjmAH6sp4VEhNXNRgHKA"/>
+</div>
+<div class="p-xs">
+<p class="font-label-md text-label-md text-primary">Main Control PCB</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Limited</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-xs pb-4 pt-2 bg-surface-container-lowest shadow-[0_-2px_10px_rgba(0,0,0,0.04)] rounded-t-full">
+<div class="flex flex-col items-center justify-center bg-primary-fixed text-on-primary-fixed rounded-full px-4 py-1 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-md text-label-md">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:bg-surface-variant/20 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="build_circle">build_circle</span>
+<span class="font-label-md text-label-md">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:bg-surface-variant/20 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="font-label-md text-label-md">Store</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:bg-surface-variant/20 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span class="font-label-md text-label-md">Plans</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-fixed-variant hover:bg-surface-variant/20 active:scale-90 transition-all duration-200">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-md text-label-md">Account</span>
+</div>
+</nav>
+<script>
+        // Simple micro-interaction for scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('glass-effect');
+                header.classList.remove('bg-surface');
+            } else {
+                header.classList.remove('glass-effect');
+                header.classList.add('bg-surface');
+            }
+        });
+    </script>
+</body></html>
